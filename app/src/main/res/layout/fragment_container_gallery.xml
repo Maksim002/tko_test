@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_user_gallery"
+        android:drawablePadding="10dp"
+        android:text="Галерея"
+        android:textColor="@color/color_text_w"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/resultUnloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_w"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="@string/weighing_6_000"/>
+
+    <TextView
+        android:id="@+id/resultUnloadingConInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_w"
+        android:layout_marginTop="3dp"
+        android:text="@string/text_con_info_2_1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/containerGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_contaner"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>
